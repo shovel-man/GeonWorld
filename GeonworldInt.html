@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>건월드 소개-건월드</title>
+</head>
+<body>
+    <h1>오 좋네 좋다 맨이야. 어메이징 오 좋네 좋다 맨이야. 어메이징 오 좋네 좋다 맨이야. 어메이징 오 좋네 좋다 맨이야. 어메이징 오 좋네 좋다 맨이야. 어메이징 오 좋네 좋다 맨이야. 어메이징</h1>
+</body>
+<style>
+    @keyframes Supersexy {
+        0% {
+            font-size: 20px;
+        }
+        50% {
+            font-size: 300px;
+            font-weight: 800;
+        }
+        100% {
+            font-size: 150px;
+        }
+    }
+    h1 {
+        color: brown;
+        animation: Supersexy 10s ;
+        animation-iteration-count: infinite;
+    }
+    .toblack {
+        background-color: black;
+    }
+</style>
+<script>
+    const body1 = document.body
+    let i = 0;
+    setInterval(() => { if (i%2 == 0){body1.className = "toblack"} else {body1.className = ""}i++}, 200)
+</script>
+</html>
